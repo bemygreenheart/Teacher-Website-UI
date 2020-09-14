@@ -1,0 +1,334 @@
+/* Initial set up */
+
+body{
+    background-color: #e8e3D0;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+/* Utils */
+.circular {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: a;
+    margin: auto;
+  }
+
+  .circular img {
+    min-width: 120%;
+    min-height: 120%;
+    width: auto;
+    height: auto;
+  }
+
+  .my-font{
+    font-family: 'Concert One', Arial, Helvetica, sans-serif;
+}
+
+.my-bg{
+    background-color: #e8e3D0;
+}
+
+.my-color{
+    color: #e8e3D0;
+}
+
+.my-red{
+    color: #ff6262;
+}
+
+
+/* Contact Page */
+  .contact-button{
+      border-color: #e8e3D0;
+      color: #e8e3D0;
+  }
+
+/* Navbar */
+#main-navbar, #main-footer{
+    opacity: 0.9;
+}
+
+div.dropdown-menu a{
+    color: #fff;
+}
+div.dropdown-menu a:hover{
+    color: #333;
+}
+
+#main-navbar .navbar-brand{
+    color:#e8e3D0;
+}
+
+#showcase .carousel-item {
+    height: 60vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    }
+
+.black-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60vh;
+   background: rgba(0, 0, 0, 0.3); 
+}
+
+
+#author-info h2, #showcase h3, #content-info h2, #mystudents h2, #mystudents h4{
+    font-size: 2rem;
+    font-family: 'Concert One', Arial, Helvetica, sans-serif;
+}
+
+#mystudents p{
+    font-family: 'Concert One', Arial, Helvetica, sans-serif;
+}
+
+#mystudents .comm{
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    #showcase .carousel-control-prev, #showcase .carousel-control-next{
+        display: none;
+    }
+
+    .circular{
+        top: -25px;
+    }
+    #mystudents .row{
+        margin-bottom: 100px;
+    }
+    #mystudents p, h4{
+        padding: 0;
+    }
+
+    #about-info::before {
+        display: none;
+        padding-bottom: 10px !important;
+    }
+
+    #about-gallery::before{
+        display: none;
+        padding-top: 10px !important;
+    }
+
+  }
+
+ .col-md-3 img{
+    max-width: 130px;
+    display: inline-block;
+ }
+
+
+.contact-button:hover{
+    background-color:  #e8e3D0;
+    color: #333;
+    border-color: #e8e3D0;
+}
+
+#contact-main i{
+    color: #fff;
+}
+
+#contact-main .col-md-4 .card{
+    box-shadow: -5px -5px 5px#333 ;
+}
+#contact-main .col-md-8 .card{
+    box-shadow: 5px 5px 5px#333 ;
+}
+
+@media only screen and (min-width: 600px){
+    #contact-icons .row{
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+    #mystudents .comm{
+        margin-bottom: 10px !important;
+    }
+}
+
+#contact-icons i:hover{
+    color: #e8e3D0;
+}
+
+.center-block{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newsletter input{
+    max-width: 200px;
+}
+
+/* About Page */
+
+.about-bg{
+    background: url("../imgs/about.jpg") center center/cover;
+    min-height: 250px;
+}
+
+.my-bar{
+    background: #e8e3D0 !important;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+
+#about-gallery .gallery{
+	position: relative;
+	height: auto;
+	width: 90%;
+	margin: auto;
+	padding: 45px 0;
+	display: grid;
+	grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
+	grid-gap: 2vh;
+	grid-auto-flow: dense;
+}
+#about-gallery .gallery .img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
+	border-radius: 2px;
+}
+#about-gallery .gallery .img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+#about-gallery .gallery .img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+#about-gallery .gallery .img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+#about-gallery .gallery .img:nth-child(6n+7){
+	grid-row-start: span 1;
+}
+#about-gallery .gallery .img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+#about-gallery .gallery .img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.7) grayscale(0.5);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+#about-gallery .gallery .img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+@media only screen and (max-width: 768px){
+	#about-gallery h1{
+		font-size: 1.8em;
+		width: 400px;
+	}
+	#about-gallery p{
+		font-size: 1.2em;
+	}
+	#about-gallery .gallery{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+}
+@media only screen and (max-width: 430px){
+	#about-gallery .gallery{
+		display: block;
+	}
+	#about-gallery .gallery .img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin:2% 0;
+	}
+	#about-gallery .gallery .img img{
+		display: block;
+		filter: brightness(1) grayscale(0);
+    }
+    
+}
+
+#my-wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+  }
+
+  #about-info img{
+      max-height: 300px;
+  }
+
+  #about-info{
+      position: relative;
+      padding-bottom: 80px !important;
+  }
+
+#about-info::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #343a40;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+#about-gallery{
+    position: relative;
+    padding-top: 80px;
+    
+}
+
+#about-gallery::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #343a40;
+    clip-path: polygon( 0 0, 0 100%, 100% 0);
+}
+
+#blog-header{
+    background: url("../imgs/blog.jpg") center center/cover;
+    min-height: 300px;
+}
+
+.blog-container{
+    width: 100%;
+    max-width: 1100px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+
