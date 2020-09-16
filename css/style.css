@@ -3,7 +3,7 @@
 body{
     background-color: #e8e3D0;
     color: black;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     overflow-x: hidden;
 }
@@ -546,3 +546,38 @@ div.dropdown-menu a:hover{
       width: 100%;
       height: auto;
   }
+
+  #quiz-panel{
+      padding-top: 80px;
+  }
+
+  .timer{
+      background: rgb(153, 132, 212);
+      border-radius: 10px;
+  }
+
+  .panel-left{
+      border-radius: 10px;
+  }
+
+  .panel-right{
+    border-radius: 10px;
+}
+
+.my-bold{
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px){
+    .quiz-footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #quiz-panel{
+        margin-top: 100px;
+    }
+}
+
