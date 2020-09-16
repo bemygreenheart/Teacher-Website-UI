@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>{% block title %}Contact{% endblock title%}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+<!-- Navabar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-navbar">
+    <div class="container">
+    <a class="navbar-brand" href="#">Java</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Latest</a>
+              <a class="dropdown-item" href="#">Month Archive</a>
+              <a class="dropdown-item" href="#">Year Archive</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Quiz
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Latest</a>
+            <a class="dropdown-item" href="#">Random</a>
+            <a class="dropdown-item" href="#">Search</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+      </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Intrroduction Part -->
+<section id="detial-intro" class="mb-5">
+  <div class="blog-container">
+    <div class="quiz-img">
+      <img src="../imgs/quiz.jpg" alt="">
+    </div>
+    <div class="px-4">
+      <h1 class="text-center py-3 display-4 my-font">Special Quiz Title</h1>
+      <p class="text-left text-muted mx-5 pl-3">Brief Description...</p>
+      <p class="">Generating random paragraphs can be an excellent way for writers to get their 
+        creative flow going at the beginning of the day. The writer has no idea what 
+        topic the random paragraph will be about when it appears. This forces the writer
+         to use creativity to complete one of three common writing challenges. The writer
+          can use the paragraph as the <a href="random.com"> first one </a>of a short story and build upon it. A second 
+          option is to use the random paragraph somewhere in a short story they create. The third 
+          option is to have the  random paragraph be the ending paragraph in a short story. No matter 
+          which of these challenges is undertaken, the writer is forced to use creativity to incorporate 
+          the paragraph into their writing.</p>
+
+          <p class="text-center py-2"><a href="start.html" class="btn btn-dark btn-lg">Start Now</a></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="like">
+  <div class="container">
+  <p class="mx-5"><i class="far fa-thumbs-up fa-2x"></i> 
+    <i class="fas fa-thumbs-up fa-2x"></i> 
+    <span class="badge badge-dark align-middle">16</span></p>
+  <p><i class="far fa-thumbs-down fa-2x"></i> 
+    <i class="fas fa-thumbs-down fa-2x"></i>
+    <span class="badge badge-dark align-middle">0</span></p>
+    <hr>
+  </div>
+</div>
+
+<section id="blog-comment">
+  <div class="container">
+    <form action="">
+      <div class="form-group">
+        <textarea class="form-control" placeholder="Add Comment..."></textarea>
+      </div>
+    </form>
+
+    <div class="comments">
+      <ul>
+        <li class="p-4">
+          <p class="ml-3"> <img src="../imgs/student1.jpg" alt=""><span class="my-font ml-2">Joseph Moore</span> <span class="small text-muted">2 days ago</span></p>
+          <p>Because the CCSS literacy in science standards predated the NGSS, 
+            developers of the NGSS worked directly with the CCSS team to identify 
+            the connections between the two sets of standards. However, questions 
+            about how the two sets of standards can complement each other and can be 
+            used in concert to improve students' reading and writing, as well as listening
+             and speaking, in science to learn science continue to exist.</p>
+        </li>
+
+        <li class="p-4">
+          <p class="ml-3"> <img src="../imgs/student2.jpg" alt=""><span class="my-font ml-2">Joseph Moore</span> <span class="small text-muted">2 days ago</span></p>
+          <p>Because the CCSS literacy in science standards predated the NGSS, 
+            developers of the NGSS worked directly with the CCSS team to identify 
+            the connections between the two sets of standards. However, questions 
+            about how the two sets of standards can complement each other and can be 
+            used in concert to improve students' reading and writing, as well as listening
+             and speaking, in science to learn science continue to exist.</p>
+        </li>
+
+        <li class="p-4">
+          <p class="ml-3"> <img src="../imgs/student3.jpg" alt=""><span class="my-font ml-2">Joseph Moore</span> <span class="small text-muted">2 days ago</span></p>
+          <p>Because the CCSS literacy in science standards predated the NGSS, 
+            developers of the NGSS worked directly with the CCSS team to identify 
+            the connections between the two sets of standards. However, questions 
+            about how the two sets of standards can complement each other and can be 
+            used in concert to improve students' reading and writing, as well as listening
+             and speaking, in science to learn science continue to exist.</p>
+        </li>
+
+        <li class="p-4">
+          <p class="ml-3"> <img src="" alt=""><span class="my-font ml-2">Joseph Moore</span> <span class="small text-muted">2 days ago</span></p>
+          <p>Because the CCSS literacy in science standards predated the NGSS, 
+            developers of the NGSS worked directly with the CCSS team to identify 
+            the connections between the two sets of standards. However, questions 
+            about how the two sets of standards can complement each other and can be 
+            used in concert to improve students' reading and writing, as well as listening
+             and speaking, in science to learn science continue to exist.</p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer id='main-footer' class="bg-dark text-center text-white py-1">
+    <div class="container">
+        <p>Copyright &copy; <span id="year"></span></p>
+        <h4>Java blog</h4>
+    </div>
+</footer>
+
+<!-- Bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Script files -->
+<script>
+    $("#year").text(new Date().getFullYear());
+
+    $(document).ready(function(){
+    
+    });
+</script>
+
+</body>
+</html>
